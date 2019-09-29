@@ -3,12 +3,35 @@
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/zyxar/Sublime-CMakeLists?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 * Simple auto-indentation support.
-* Syntax highlighting for CMakeLists.txt files and `*.cmake` files, based on 
+* Syntax highlighting for CMakeLists.txt files and `*.cmake` files, based on
   [CMake 3.0][1].
 * Syntax highlighting for CMakeCache.txt files.
 * Syntax highlighting for `.h.in` and `.hpp.in` files.
 * Basic snippets.
 * Basic keybindings.
+
+
+## Installation
+
+### By Package Control
+
+1. Download & Install `Sublime Text 3` (https://www.sublimetext.com/3)
+1. Go to the menu `Tools -> Install Package Control`, then,
+   wait few seconds until the `Package Control` installation finishes
+1. Go to the menu `Preferences -> Package Control`
+1. Type `Package Control Add Channel` on the opened quick panel and press <kbd>Enter</kbd>
+1. Then, input the following address and press <kbd>Enter</kbd>
+   ```
+   https://raw.githubusercontent.com/evandrocoan/StudioChannel/master/channel.json
+   ```
+1. Now, go again to the menu `Preferences -> Package Control`
+1. This time type `Package Control Install Package` on the opened quick panel and press <kbd>Enter</kbd>
+1. Then, search for `CMake` and press <kbd>Enter</kbd>
+
+See also:
+1. [ITE - Integrated Toolset Environment](https://github.com/evandrocoan/ITE)
+1. [Package control docs](https://packagecontrol.io/docs/usage) for details.
+
 
 ## Available Snippets
 
@@ -26,11 +49,11 @@ the snippet, and you can then press backspace to remove the optional argument.
 ## Available Key Bindings
 
 * Select a word, and press <kbd>$</kbd> to wrap the selection
-  as a [variable substitution][3]. The newly inserted text will stay selected, 
-  so that you can press the double-quotes character <kbd>"</kbd> to enclose the 
-  selection in double-qoutes too. Press tab to get out of the selection if you 
+  as a [variable substitution][3]. The newly inserted text will stay selected,
+  so that you can press the double-quotes character <kbd>"</kbd> to enclose the
+  selection in double-qoutes too. Press tab to get out of the selection if you
   don't want double-quotes.
-* Select a word, and press <kbd>ctrl</kbd><kbd>shift</kbd><kbd>,</kbd> to wrap 
+* Select a word, and press <kbd>ctrl</kbd><kbd>shift</kbd><kbd>,</kbd> to wrap
   the selection as a [generator expression][2] with an argument.
 * Select a word, and press <kbd>ctrl</kbd><kbd>shift</kbd><kbd>.</kbd> to wrap
   the selection as a [generator expression][2] without an argument.
